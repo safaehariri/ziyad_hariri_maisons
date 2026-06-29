@@ -184,7 +184,6 @@ textarea {
   max-width: 760px;
 }
 
-.eyebrow,
 .section-kicker {
   margin: 0 0 14px;
   color: var(--red);
@@ -192,6 +191,22 @@ textarea {
   font-weight: 800;
   letter-spacing: 0;
   text-transform: uppercase;
+}
+
+.eyebrow {
+  display: inline-flex;
+  width: fit-content;
+  margin: 0 0 18px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.94);
+  border-left: 4px solid var(--red);
+  font-size: 0.82rem;
+  font-weight: 850;
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
 }
 
 h1,
@@ -274,7 +289,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: var(--max);
-  margin: -48px auto 0;
+  margin: clamp(28px, 5vw, 54px) auto 0;
   padding: 0 clamp(20px, 5vw, 0px);
   box-shadow: var(--shadow);
   border-top: 5px solid var(--green);
@@ -651,7 +666,6 @@ h3 {
   }
 
   .intro-band {
-    margin-top: 0;
     padding-inline: 0;
   }
 
